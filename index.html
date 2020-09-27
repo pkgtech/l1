@@ -17,7 +17,7 @@
 
 <body data-spy="scroll" data-target="#navbar">
     <div id="home">
-        <div class="nav justify-content-between align-items-center bg-light px-3" id="nav">
+        <div class="nav justify-content-between align-items-center bg-light px-3 fixed-top" id="nav">
             <h3 class="text-dark"><img src="img/cart.png" alt="Laundry Kart" style="height: 6vh; filter: invert(1);"> Laundry kart</h3>
 
             <nav class="nav ham-burger" id="navbar">
@@ -27,30 +27,29 @@
                 <a class="nav-item nav-link" href="#about-section">About</a>
                 <a class="nav-item nav-link" href="#contact-section">Contact</a>
             </nav>
-            <div class="d-flex mr-3 ham-burger">
-                
-            </div>
-            <a href="javascript:void(0);" class="icon text-light" onclick="menu()">
+            <a href="javascript:void(0);" class="icon text-dark" onclick="menu()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
         <!-- sm-navbar -->
-        <div class="line-nav bg-dark" id="sm-navbar">
-            <a class="nav-link" href="#">Home</a>
-            <a class="nav-link" href="#book-section">Book</a>
-            <a class="nav-link" href="#price-section">Prices</a>
-            <a class="nav-link" href="#about-section">About</a>
-            <a class="nav-link" href="#contact-section">Contact</a>
+        <div class=" row line-nav bg-light" id="sm-navbar">
+            <a class="col nav-link" href="#">Home</a>
+            <a class="col nav-link" href="#book-section">Book</a>
+            <a class="col nav-link" href="#price-section">Prices</a>
+            <a class="col nav-link" href="#about-section">About</a>
+            <a class="col nav-link" href="#contact-section">Contact</a>
         </div>
 
         <!-- #Home-Section -->
         <div class="d-flex justify-content-center bg-img align-items-center" style="height: 60vh;">
-            <div class="text-center">
+            <div class="text-center py-4 px-4 rounded mt-5" id="lc">
+                <div class="container">
                 <h1 class="text-light"><strong>Laundry Kart</strong></h1>
                 <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> In tempore
                     pariatur quae assumenda, nesciunt deserunt dolores quibusdam!<br> repudiandae natus aspernatur.</p>
                 <a class="btn btn-black mx-1" href="signup.html">Signup</a>
                 <a class="btn btn-black mx-1" href="login.html">Login</a>
+            </div>
             </div>
         </div>
     </div>
@@ -135,7 +134,7 @@
         </div>
     </div><br><br>
 
-    <!-- menu / courosel -->
+    <!-- menu cards -->
     <div class="container-fluid justify-content-center mb-5 w-75" id="price-section">
         <div class="text-center">
             <h1>Price Menu:</h1><br>
@@ -143,45 +142,42 @@
                 <div class="card-deck mb-3 text-center">
                   <div class="card mb-4 box-shadow">
                     <div class="card-header">
-                      <h4 class="my-0 font-weight-normal">Free</h4>
+                      <h4 class="my-0 font-weight-normal">Man</h4>
                     </div>
                     <div class="card-body">
-                      <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
                       <ul class="list-unstyled mt-3 mb-4">
-                        <li>10 users included</li>
-                        <li>2 GB of storage</li>
-                        <li>Email support</li>
-                        <li>Help center access</li>
+                        <li>Shirt &nbsp;&nbsp;&nbsp;<Strong>₹40-₹75</Strong></li>
+                        <li>TShirt &nbsp;&nbsp;&nbsp;<Strong>₹40-₹75</Strong></li>
+                        <li>Jeans &nbsp;&nbsp;&nbsp;<Strong>₹45-₹85</Strong></li>
+                        <li>Trouser &nbsp;&nbsp;&nbsp;<Strong>₹55-₹80</Strong></li>
                       </ul>
                       <a href="#" class="btn btn-info shadow">Book Appointment</a>
                     </div>
                   </div>
                   <div class="card mb-4 box-shadow">
                     <div class="card-header">
-                      <h4 class="my-0 font-weight-normal">Pro</h4>
+                      <h4 class="my-0 font-weight-normal">Woman</h4>
                     </div>
                     <div class="card-body">
-                      <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
                       <ul class="list-unstyled mt-3 mb-4">
-                        <li>20 users included</li>
-                        <li>10 GB of storage</li>
-                        <li>Priority email support</li>
-                        <li>Help center access</li>
+                        <li>Saree &nbsp;&nbsp;&nbsp;<Strong>₹65-₹95</Strong></li>
+                        <li>Top &nbsp;&nbsp;&nbsp;<Strong>₹55-₹85</Strong></li>
+                        <li>Legging &nbsp;&nbsp;&nbsp;<Strong>₹25-₹50</Strong></li>
+                        <li>Jeans &nbsp;&nbsp;&nbsp;<Strong>₹50-₹85</Strong></li>
                       </ul>
                       <a href="#" class="btn btn-info shadow">Book Appointment</a>
                     </div>
                   </div>
                   <div class="card mb-4 box-shadow">
                     <div class="card-header">
-                      <h4 class="my-0 font-weight-normal">Enterprise</h4>
+                      <h4 class="my-0 font-weight-normal">Kids</h4>
                     </div>
                     <div class="card-body">
-                      <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
                       <ul class="list-unstyled mt-3 mb-4">
-                        <li>30 users included</li>
-                        <li>15 GB of storage</li>
-                        <li>Phone and email support</li>
-                        <li>Help center access</li>
+                        <li>Shirt &nbsp;&nbsp;&nbsp;<Strong>₹35-₹55</Strong></li>
+                        <li>TShirt &nbsp;&nbsp;&nbsp;<Strong>₹35-₹55</Strong></li>
+                        <li>Jeans &nbsp;&nbsp;&nbsp;<Strong>₹40-₹65</Strong></li>
+                        <li>Skirt &nbsp;&nbsp;&nbsp;<Strong>₹45-₹60</Strong></li>
                       </ul>
                       <a href="#" class="btn btn-info shadow">Book Appointment</a>
                     </div>
