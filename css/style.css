@@ -17,13 +17,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: url(../img/darken-bg.png);
+    background: url(../ex/bg1.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -1;
-    /* opacity: 0.8; */
 }
-
+#lc{
+    background-color: rgba(0, 0, 0, 0.418);
+}
 /* .wave::before{
     content: "";
     position: absolute;
@@ -56,8 +57,9 @@ nav a,.line-nav a{
 }
 
 nav a:hover{
-    color:rgb(252, 247, 247);
-    background-color: rgb(17, 16, 16);
+    /* color:rgb(252, 247, 247);
+    background-color: rgb(17, 16, 16); */
+    border-bottom: 2px solid black;
 }
 .btn-black{
     color: black;
@@ -66,15 +68,18 @@ nav a:hover{
 .btn-black:hover{
     color:  white;
     background-color:black;
+    
 }
+
 .line-nav a:hover{
     color:rgb(66, 62, 62);
     background-color: white;
 }
 
 .active{
-    color:rgb(66, 62, 62);
-    background-color: white;
+    /* color: white;
+    background-color:rgb(66, 62, 62); */
+    border-bottom: 2px solid black;
 }
 
 .card-margin{
@@ -116,7 +121,8 @@ nav a:hover{
 }
 
 .line-nav a{
-    display: flex;
+    /* display: flex;
+    flex-direction: row; */
 }
 
 .bg-bg{
