@@ -1,14 +1,6 @@
-
-/* section{
-    width: 100%;
-} */
-
-/* body{
-    position: relative;
-    background: url(../img/slider4.jpg) no-repeat;
-    background-size: cover;
-    height: 70vh;
-} */
+html {
+    scroll-behavior: smooth;
+}
 
 .bg-img::after{
     content: "";
@@ -52,33 +44,27 @@
     height: 100vh;
 }
 
-nav a,.line-nav a{
+nav a{
     color:black;
 }
 
 nav a:hover{
-    /* color:rgb(252, 247, 247);
-    background-color: rgb(17, 16, 16); */
+    color: black;
     border-bottom: 2px solid black;
 }
+
 .btn-black{
     color: black;
     background-color: white;
 }
+
 .btn-black:hover{
     color:  white;
     background-color:black;
     
 }
 
-.line-nav a:hover{
-    color:rgb(66, 62, 62);
-    background-color: white;
-}
-
 .active{
-    /* color: white;
-    background-color:rgb(66, 62, 62); */
     border-bottom: 2px solid black;
 }
 
@@ -86,17 +72,25 @@ nav a:hover{
     margin-top: 40px;
 }
 
-.icon{
-    display: none;
+#contact-box{
+    width: 50%;
 }
 
+.bg-bg{
+    background-color: #e9ecef;
+}
+
+.rt{
+    transform: rotate(-3deg);
+    width: 100%;
+}
+
+/* +----------------+ */
+/* Mobile-Version CSS */
+/* +----------------+ */
 @media screen and (max-width: 800px) {
     .ham-burger a{
         display: none;
-    }
-    .icon {
-        display: block;
-        float: right;
     }
     .card-margin{
         margin-top: 0;
@@ -113,22 +107,19 @@ nav a:hover{
     .card-body{
         padding: 0;
     }
+    #contact-box{
+        width: 100vw;
+    }
+    h5{
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 2.3rem;
+    }
+    .rt{
+        width: 100%;
+    }
+    .h{
+        display: none;
+    }
   }
-
-.line-nav{
-    overflow: hidden;
-    display: none;
-}
-
-.line-nav a{
-    /* display: flex;
-    flex-direction: row; */
-}
-
-.bg-bg{
-    background-color: #e9ecef;
-}
-
-.rt{
-    transform: rotate(-3deg);
-}
