@@ -2,189 +2,185 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="img/cart.png" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="img/cart.png" type="image/x-icon">
 
-    <title>Laundry Kart</title>
+  <title>Laundry Kart</title>
 </head>
 
-<body data-spy="scroll" data-target="#navbar">
-    <div id="home">
-        <div class="nav justify-content-between align-items-center bg-light px-3 fixed-top" id="nav">
-            <h3 class="text-dark"><img src="img/cart.png" alt="Laundry Kart" style="height: 6vh; filter: invert(1);"> Laundry kart</h3>
-
-            <nav class="nav ham-burger" id="navbar">
-                <a class="nav-item nav-link active" href="#home">Home</a>
-                <a class="nav-item nav-link" href="#book-section">Book</a>
-                <a class="nav-item nav-link" href="#price-section">Prices</a>
-                <a class="nav-item nav-link" href="#about-section">About</a>
-                <a class="nav-item nav-link" href="#contact-section">Contact</a>
-            </nav>
-            <a href="javascript:void(0);" class="icon text-dark" onclick="menu()">
-                <i class="fa fa-bars"></i>
-            </a>
+<body data-spy="scroll" data-target="#navbar" data-offset="80">
+  <div id="home">
+    <div class="row row-cols-1 row-cols-md-2 bg-light">
+      <div class="sm1-nav d-flex justify-content-between px-4">
+        <div>
+          <h1 class="text-dark"><img src="img/cart.png" alt="Laundry Kart" style="height: 6vh; filter: invert(1);">
+            Laundry kart</h1>
         </div>
-        <!-- sm-navbar -->
-        <div class=" row line-nav bg-light" id="sm-navbar">
-            <a class="col nav-link" href="#">Home</a>
-            <a class="col nav-link" href="#book-section">Book</a>
-            <a class="col nav-link" href="#price-section">Prices</a>
-            <a class="col nav-link" href="#about-section">About</a>
-            <a class="col nav-link" href="#contact-section">Contact</a>
+        <div class="d-md-none float-right">
+          <button onclick="menu()" class="btn" style="transform: rotate(90deg);"><h3>|||</h3></button>
         </div>
-
-        <!-- #Home-Section -->
-        <div class="d-flex justify-content-center bg-img align-items-center" style="height: 60vh;">
-            <div class="text-center py-4 px-4 rounded mt-5" id="lc">
-                <div class="container">
-                <h1 class="text-light"><strong>Laundry Kart</strong></h1>
-                <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> In tempore
-                    pariatur quae assumenda, nesciunt deserunt dolores quibusdam!<br> repudiandae natus aspernatur.</p>
-                <a class="btn btn-black mx-1" href="signup.html">Signup</a>
-                <a class="btn btn-black mx-1" href="login.html">Login</a>
-            </div>
-            </div>
-        </div>
+      </div>
+      <nav class="col navbar h d-md-flex flex-row" id="navbar">
+        <a class="nav-item nav-link" href="#home">Home</a>
+        <a class="nav-item nav-link" href="#mission-section">Our Mission</a>
+        <a class="nav-item nav-link" href="#price-section">Prices</a>
+        <a class="nav-item nav-link" href="#about-section">About</a>
+        <a class="nav-item nav-link" href="#contact-section">Contact</a>
+      </nav>
     </div>
 
-
-    <!-- cards-section -->
-    <div class="container-fluid my-4">
-        <div class="card-columns row row-cols-3 rm row-cols-md-6 justify-content-center">
-            <!-- card1 -->
-            <div class="card col mx-1 shadow pt-2 mb-2">
-                <img class="card-img-top rounded-circle-warning" src="img/book.png" alt="Booking">
-                <div class="card-body">
-                    <h4>1. Booking</h4>
-                    <p>Select your available date and
-                        time and book an appointment with our executive. Our executive will come down to your doorstep.
-                    </p>
-                </div>
-            </div>
-            <!-- card2 -->
-            <div class="card col mx-1 shadow pt-2 mb-2 card-margin">
-                <img class="card-img-top rounded-circle-primary" src="img/tagging.png" alt="Tagging">
-                <div class="card-body">
-                    <h4>2. Tagging</h3>
-                        <p>Get your clothes tagged by our executive to differentiate among the other clothes, a unique
-                            barcode
-                            assigned for tracking.</p>
-                </div>
-            </div>
-            <!-- card3 -->
-            <div class="card col mx-1 shadow pt-2 mb-2">
-                <img class="card-img-top rounded-circle-success" src="img/pickup.jpg" alt="Pickup">
-                <div class="card-body">
-                    <h4>3. Pickup</h4>
-                    <p>After the tagging process is done,The number of clothes picked up will be reflected on the app
-                        and
-                        our executive will pick up your laundry.</p>
-                </div>
-            </div>
-            <!-- card4 -->
-            <div class="card col mx-1 shadow pt-2 mb-2 card-margin" style="width: 18rem;">
-                <img class="card-img-top rounded-circle-secondary" src="img/processing.jpg" alt="Processing">
-                <div class="card-body">
-                    <h4>4. Processing</h4>
-                    <p>Clothes are sorted upon the fabric and instructions and are processed in our German equipment
-                        under
-                        our expert’s guidance.</p>
-                </div>
-            </div>
-            <!-- card5 -->
-            <div class="card col mx-1 shadow pt-2 mb-2" style="width: 18rem;">
-                <img class="card-img-top rounded-circle-info" src="img/delivery.jpg" alt="Delivery">
-                <div class="card-body">
-                    <h4>5. Delivery</h4>
-                    <p>After a prior quality check, your clothes are packed and are moved to a nearby laundrykart store
-                        and
-                        is delivered at your doorstep.</p>
-                </div>
-            </div>
-
-        </div><!-- /row -->
-    </div><br><br><br><!-- /container -->
-
-
-    <!-- our-mission -->
-    <div class="jumbotron text-center">
-        <div class="w-75 mx-auto">
-            <h1><strong>Our Mission</strong></h1>
-            <blockquote class="blockquote mb-0 text-secondary">
-                <p>
-                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ab qui in veniam? Quas esse porro
-                    eligendi aperiam error nulla eos. Corrupti sequi aliquid possimus maiores fuga, aliquam delectus
-                    ipsum!</h5>
-                </p>
-                <p>
-                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ab qui in veniam? Quas esse porro
-                    eligendi aperiam error nulla eos. Corrupti sequi aliquid possimus maiores fuga, aliquam delectus
-                    ipsum!</h5>
-                </p><br>
-                <footer class="blockquote-footer float-right"> Laundry Kart, <cite title="Source Title">CEO</cite>
-                </footer>
-            </blockquote>
+    <!-- #Home-Section -->
+    <div class="d-flex justify-content-center bg-img align-items-center" style="height: 60vh;">
+      <div class="text-center py-4 px-md-4 rounded mt-5" id="lc">
+        <div class="container">
+          <h1 class="text-light"><strong>Laundry Kart</strong></h1>
+          <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> In tempore
+            pariatur quae assumenda, nesciunt deserunt dolores<br> quibusdam! repudiandae natus aspernatur.</p>
+          <a class="btn btn-black mx-1" href="signup.html">Signup</a>
+          <a class="btn btn-black mx-1" href="login.html">Login</a>
         </div>
-    </div><br><br>
+      </div>
+    </div>
+  </div>
 
-    <!-- menu cards -->
-    <div class="container-fluid justify-content-center mb-5 w-75" id="price-section">
-        <div class="text-center">
-            <h1>Price Menu:</h1><br>
-            <div class="container">
-                <div class="card-deck mb-3 text-center">
-                  <div class="card mb-4 box-shadow">
-                    <div class="card-header">
-                      <h4 class="my-0 font-weight-normal">Man</h4>
-                    </div>
-                    <div class="card-body">
-                      <ul class="list-unstyled mt-3 mb-4">
-                        <li>Shirt &nbsp;&nbsp;&nbsp;<Strong>₹40-₹75</Strong></li>
-                        <li>TShirt &nbsp;&nbsp;&nbsp;<Strong>₹40-₹75</Strong></li>
-                        <li>Jeans &nbsp;&nbsp;&nbsp;<Strong>₹45-₹85</Strong></li>
-                        <li>Trouser &nbsp;&nbsp;&nbsp;<Strong>₹55-₹80</Strong></li>
-                      </ul>
-                      <a href="#" class="btn btn-info shadow">Book Appointment</a>
-                    </div>
-                  </div>
-                  <div class="card mb-4 box-shadow">
-                    <div class="card-header">
-                      <h4 class="my-0 font-weight-normal">Woman</h4>
-                    </div>
-                    <div class="card-body">
-                      <ul class="list-unstyled mt-3 mb-4">
-                        <li>Saree &nbsp;&nbsp;&nbsp;<Strong>₹65-₹95</Strong></li>
-                        <li>Top &nbsp;&nbsp;&nbsp;<Strong>₹55-₹85</Strong></li>
-                        <li>Legging &nbsp;&nbsp;&nbsp;<Strong>₹25-₹50</Strong></li>
-                        <li>Jeans &nbsp;&nbsp;&nbsp;<Strong>₹50-₹85</Strong></li>
-                      </ul>
-                      <a href="#" class="btn btn-info shadow">Book Appointment</a>
-                    </div>
-                  </div>
-                  <div class="card mb-4 box-shadow">
-                    <div class="card-header">
-                      <h4 class="my-0 font-weight-normal">Kids</h4>
-                    </div>
-                    <div class="card-body">
-                      <ul class="list-unstyled mt-3 mb-4">
-                        <li>Shirt &nbsp;&nbsp;&nbsp;<Strong>₹35-₹55</Strong></li>
-                        <li>TShirt &nbsp;&nbsp;&nbsp;<Strong>₹35-₹55</Strong></li>
-                        <li>Jeans &nbsp;&nbsp;&nbsp;<Strong>₹40-₹65</Strong></li>
-                        <li>Skirt &nbsp;&nbsp;&nbsp;<Strong>₹45-₹60</Strong></li>
-                      </ul>
-                      <a href="#" class="btn btn-info shadow">Book Appointment</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="4000">
+
+  <!-- cards-section -->
+  <div class="container-fluid my-4">
+    <div class="card-columns row row-cols-3 rm row-cols-md-6 justify-content-center">
+      <!-- card1 -->
+      <div class="card col mx-1 shadow pt-2 mb-2">
+        <img class="card-img-top rounded-circle-warning" src="img/book.png" alt="Booking">
+        <div class="card-body">
+          <h4>1. Booking</h4>
+          <p>Select your available date and
+            time and book an appointment with our executive. Our executive will come down to your doorstep.
+          </p>
+        </div>
+      </div>
+      <!-- card2 -->
+      <div class="card col mx-1 shadow pt-2 mb-2 card-margin">
+        <img class="card-img-top rounded-circle-primary" src="img/tagging.png" alt="Tagging">
+        <div class="card-body">
+          <h4>2. Tagging</h3>
+            <p>Get your clothes tagged by our executive to differentiate among the other clothes, a unique
+              barcode
+              assigned for tracking.</p>
+        </div>
+      </div>
+      <!-- card3 -->
+      <div class="card col mx-1 shadow pt-2 mb-2">
+        <img class="card-img-top rounded-circle-success" src="img/pickup.jpg" alt="Pickup">
+        <div class="card-body">
+          <h4>3. Pickup</h4>
+          <p>After the tagging process is done,The number of clothes picked up will be reflected on the app
+            and
+            our executive will pick up your laundry.</p>
+        </div>
+      </div>
+      <!-- card4 -->
+      <div class="card col mx-1 shadow pt-2 mb-2 card-margin" style="width: 18rem;">
+        <img class="card-img-top rounded-circle-secondary" src="img/processing.jpg" alt="Processing">
+        <div class="card-body">
+          <h4>4. Processing</h4>
+          <p>Clothes are sorted upon the fabric and instructions and are processed in our German equipment
+            under
+            our expert’s guidance.</p>
+        </div>
+      </div>
+      <!-- card5 -->
+      <div class="card col mx-1 shadow pt-2 mb-2" style="width: 18rem;">
+        <img class="card-img-top rounded-circle-info" src="img/delivery.jpg" alt="Delivery">
+        <div class="card-body">
+          <h4>5. Delivery</h4>
+          <p>After a prior quality check, your clothes are packed and are moved to a nearby laundrykart store
+            and
+            is delivered at your doorstep.</p>
+        </div>
+      </div>
+
+    </div><!-- /row -->
+  </div><br><br><br><!-- /container -->
+
+
+  <!-- our-mission -->
+  <div class="jumbotron text-center" id="mission-section">
+    <div class="w-75 mx-auto">
+      <h1><strong>Our Mission</strong></h1>
+      <blockquote class="blockquote mb-0 text-secondary">
+        <p>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ab qui in veniam? Quas esse porro
+          eligendi aperiam error nulla eos. Corrupti sequi aliquid possimus maiores fuga, aliquam delectus
+          ipsum!</h5>
+        </p>
+        <p>
+        <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ab qui in veniam? Quas esse porro
+          eligendi aperiam error nulla eos. Corrupti sequi aliquid possimus maiores fuga, aliquam delectus
+          ipsum!</h5>
+        </p><br>
+        <footer class="blockquote-footer float-right"> Laundry Kart, <cite title="Source Title">CEO</cite>
+        </footer>
+      </blockquote>
+    </div>
+  </div><br><br>
+
+  <!-- price menu -->
+  <div class="container-fluid justify-content-center mb-5 w-75" id="price-section">
+    <div class="text-center">
+      <h1>Price Menu:</h1><br>
+      <div class="container">
+        <div class="card-deck mb-3 text-center">
+          <div class="card mb-4 box-shadow">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Man</h4>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Shirt &nbsp;&nbsp;&nbsp;<Strong>₹40-₹75</Strong></li>
+                <li>TShirt &nbsp;&nbsp;&nbsp;<Strong>₹40-₹75</Strong></li>
+                <li>Jeans &nbsp;&nbsp;&nbsp;<Strong>₹45-₹85</Strong></li>
+                <li>Trouser &nbsp;&nbsp;&nbsp;<Strong>₹55-₹80</Strong></li>
+              </ul>
+              <a href="#" class="btn btn-info shadow">Book Appointment</a>
+            </div>
+          </div>
+          <div class="card mb-4 box-shadow">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Woman</h4>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Saree &nbsp;&nbsp;&nbsp;<Strong>₹65-₹95</Strong></li>
+                <li>Top &nbsp;&nbsp;&nbsp;<Strong>₹55-₹85</Strong></li>
+                <li>Legging &nbsp;&nbsp;&nbsp;<Strong>₹25-₹50</Strong></li>
+                <li>Jeans &nbsp;&nbsp;&nbsp;<Strong>₹50-₹85</Strong></li>
+              </ul>
+              <a href="#" class="btn btn-info shadow">Book Appointment</a>
+            </div>
+          </div>
+          <div class="card mb-4 box-shadow">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Kids</h4>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Shirt &nbsp;&nbsp;&nbsp;<Strong>₹35-₹55</Strong></li>
+                <li>TShirt &nbsp;&nbsp;&nbsp;<Strong>₹35-₹55</Strong></li>
+                <li>Jeans &nbsp;&nbsp;&nbsp;<Strong>₹40-₹65</Strong></li>
+                <li>Skirt &nbsp;&nbsp;&nbsp;<Strong>₹45-₹60</Strong></li>
+              </ul>
+              <a href="#" class="btn btn-info shadow">Book Appointment</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="4000">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -201,7 +197,7 @@
                         <img class="d-block w-100" src="img/3.jpg" alt="Third slide">
                     </div>
                 </div> -->
-                <!-- <a class="carousel-control-prev text-success" href="#carouselExampleIndicators" role="button"
+      <!-- <a class="carousel-control-prev text-success" href="#carouselExampleIndicators" role="button"
                     data-slide="prev">
                     <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
@@ -209,100 +205,99 @@
                 <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                     <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
                     <span class="sr-only">Next</span> -->
-                </a>
-            </div>
-        </div>
-    </div><br><br>
-
-    <!-- about-section -->
-    <div class="container-fluid bg-bg" id="about-section">
-        <div class="row row-cols-1 row-cols-md-2 py-4">
-            <!-- logo-card -->
-            <div class="col py-5 rt">
-                <div class="card w-75 mx-auto shadow rounded rt">
-                    <div class="card-img" style="padding: 0;">
-                        <img src="img/a.gif" class="img-fluid w-100" alt="">
-                    </div>
-                </div>
-            </div>
-            <!-- about-card -->
-            <div class="col py-5 rt">
-                <div class="card w-75 mx-auto shadow rt">
-                    <div class="card-body px-4" style="height: 100%;">
-                        <h1><strong> About Us:</strong></h1>
-                        <blockquote class="blockquote mb-0">
-                            <p>
-                            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ab qui in veniam? Quas
-                                esse porro eligendi aperiam error nulla eos. Corrupti sequi aliquid possimus maiores
-                                fuga, aliquam delectus ipsum!</h5>
-                            </p>
-                            <p>
-                            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ab qui in veniam? Quas
-                                esse porro eligendi aperiam error nulla eos. Corrupti sequi aliquid possimus maiores
-                                fuga, aliquam delectus ipsum!</h5>
-                            </p><br>
-                            <hr>
-                            <footer class="blockquote-footer float-right"> pkghacks <cite
-                                    title="Source Title">(Web-Dev)</cite></footer>
-                        </blockquote>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
+      </a>
     </div>
+  </div>
+  </div><br><br>
 
-    <!-- Contact-section -->
-    <div class="container my-3 py-4" id="contact-section">
-        <div class="container w-50">
-            <h1 class="text-center">CONTACT US</h1><BR>
-            <form action="" method="post">
-                <form>
-                    <div class="form-group">
-                        <label for="email">Email address</label>
-                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect1">Subject</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option selected>Select</option>
-                            <option value="0">Unable to Register</option>
-                            <option value="1">Unable to order</option>
-                            <option value="2">Bug issue</option>
-                            <option value="3">Feedback</option>
-                            <option value="4">Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="desc">Describe</label>
-                        <textarea class="form-control" id="desc" rows="3"></textarea>
-                    </div>
-                    <button type="submit" name="contact" class="btn btn-primary">Submit</button>
-                </form>
-            </form>
+  <!-- about-section -->
+  <div class="container-fluid bg-bg" id="about-section">
+    <div class="row row-cols-1 row-cols-md-2 py-4">
+      <!-- logo-card -->
+      <div class="col py-5 rt">
+        <div class="card w-75 mx-auto shadow rounded rt">
+          <div class="card-img" style="padding: 0;">
+            <img src="img/a.gif" class="img-fluid w-100" alt="">
+          </div>
         </div>
-    </div>
+      </div>
+      <!-- about-card -->
+      <div class="col py-5 rt">
+        <div class="card mx-auto shadow rt">
+          <div class="card-body px-2 px-md-4" style="height: 100%;">
+            <h1><strong> About Us:</strong></h1>
+            <blockquote class="blockquote mb-0">
+              <p>
+              <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ab qui in veniam? Quas
+                esse porro eligendi aperiam error nulla eos. Corrupti sequi aliquid possimus maiores
+                fuga, aliquam delectus ipsum!</h5>
+              </p>
+              <p>
+              <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ab qui in veniam? Quas
+                esse porro eligendi aperiam error nulla eos. Corrupti sequi aliquid possimus maiores
+                fuga, aliquam delectus ipsum!</h5>
+              </p><br>
+              <hr>
+              <footer class="blockquote-footer float-right"> pkghacks <cite title="Source Title">(Web-Dev)</cite>
+              </footer>
+            </blockquote>
 
-    <!-- footer -->
-    <footer class="page-footer font-small pt-4" style="background-color: rgb(238, 237, 237);">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Contact-section -->
+  <div class="container my-3 py-4" id="contact-section">
+    <div class="container" id="contact-box">
+      <h1 class="text-center">CONTACT US</h1><BR>
+      <form action="" method="post">
+        <form>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Subject</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option selected>Select</option>
+              <option value="0">Unable to Register</option>
+              <option value="1">Unable to order</option>
+              <option value="2">Bug issue</option>
+              <option value="3">Feedback</option>
+              <option value="4">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="desc">Describe</label>
+            <textarea class="form-control" id="desc" rows="3"></textarea>
+          </div>
+          <button type="submit" name="contact" class="btn btn-primary">Submit</button>
+        </form>
+      </form>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="page-footer font-small pt-4" style="background-color: rgb(238, 237, 237);">
     <div class="container-fluid text-center text-md-left py-4">
       <!-- Grid row -->
       <div class="row">
         <!-- Grid column -->
-        <div class="col-md-6 mt-md-0 mt-3 pt-5">
+        <div class="col-md-6 mt-md-0 mt-3pt-5">
           <!-- Content -->
           <h5 class="text-uppercase text-dark"><b>Subscribe to newsletter</b></h5>
           <form action="" method="post">
             <form>
-                <div class="input-group mb-2">
-                    <div class="input-group-append">
-                        <input type="email" class="form-control rounded-0" id="email" placeholder="name@example.com">
-                        <button type="submit" name="contact" class="input-group-btn btn-primary rounded-right">Subscribe</button>
-                    </div>
-                  </div>
-                <div class="form-group w-25">
+              <div class="input-group mb-2 justify-content-center">
+                <div class="input-group-append">
+                  <input type="email" class="form-control rounded-0" id="email" placeholder="name@example.com">
+                  <button type="submit" name="contact"
+                    class="input-group-btn btn-primary rounded-right">Subscribe</button>
                 </div>
+              </div>
             </form>
         </div>
         <!-- Grid column -->
@@ -347,26 +342,27 @@
 
       </div>
     </div>
-  
+
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3" style="background-color: rgb(238, 225, 225);">© 2020 Copyright: Made By
+    <div class="footer-copyright text-center py-3" style="background-color: rgb(238, 225, 225);">© 2020 Copyright: Made
+      By
       <a href="https://pkgtech.github.io/myweb/" class="text-info"> Praveen Gupta</a>
     </div>
     <!-- Copyright -->
-  
+
   </footer>
   <!-- Footer -->
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/index.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
