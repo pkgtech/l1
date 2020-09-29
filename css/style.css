@@ -111,4 +111,7 @@ nav a:hover{
     .hide{
         display: none;
     }
+    .nav-link{
+        padding: 0;
+    }
   }
